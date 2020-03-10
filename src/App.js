@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+// people component
+import People from "./components/People";
+
+// ant design layout components
+import { Layout } from "antd";
+const { Header, Footer, Content } = Layout;
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Header style={{ color: "white" }}>
+        React APollo GraphQL With Hooks
+      </Header>
+      <Content>
+        <People />
+      </Content>
+      <Footer>
+        <div style={{ bottom: "40", marginLeft: "40%" }}>
+          <a
+            href="http://www.muguku.co.ke/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <h3>
+              <span style={{ color: "blue" }}>www.muguku.co.ke</span>
+              {"\u00A0"}
+              <img
+                src={"https://www.svgrepo.com/show/34932/copyright-symbol.svg"}
+                alt="copyright"
+                height={15}
+                width={15}
+              />
+              {new Date().getFullYear()},{"\u00A0"}All rights reserved
+            </h3>
+          </a>
+        </div>
+      </Footer>
+    </Layout>
   );
 }
-
-export default App;
