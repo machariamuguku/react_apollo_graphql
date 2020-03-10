@@ -14,7 +14,13 @@ This is a simple tutorial, on getting started with GraphQL, React, Apollo client
 clone, install dependencies and run
 
 ```bash
-git clone https://github.com/machariamuguku/react_apollo_graphql.git && yarn && yarn start
+git clone https://github.com/machariamuguku/react_apollo_graphql.git
+
+cd react_apollo_graphql
+
+yarn
+
+yarn start
 ```
 
 ## License
